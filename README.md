@@ -70,55 +70,6 @@ pip install -U "qwen-agent[gui,rag,code_interpreter,mcp]"
 #   [mcp] for MCP support.
 ```
 
-## 🏃 Getting Started
-
-VLMLight provides both [English](./vlm_tsc_en/) and [Chinese](./vlm_tsc_zh/) implementations. The following examples demonstrate the English version usage. For Chinese version, simply replace `vlm_tsc_en` with `vlm_tsc_zh` in all paths and commands.
-
-### 1. Model Configuration
-Configure your LLM/VLM endpoints in `vlm_tsc_en/vlmlight_decision.py`:
-
-```python
-llm_cfg = {
-    'model': 'Qwen/Qwen2.5-72B-Instruct-AWQ',
-    'model_type': 'oai',
-    'model_server': 'http://localhost:5070/v1',
-    'api_key': 'token-abc123',
-
-    'generate_cfg': {
-        'top_p': 0.8,
-    }
-} # Language Model
-
-llm_cfg_json = {
-    'model': 'Qwen/Qwen2.5-72B-Instruct-AWQ',
-    'model_type': 'oai',
-    'model_server': 'http://localhost:5070/v1',
-    'api_key': 'token-abc123',
-
-    'generate_cfg': {
-        'top_p': 0.8,
-        'response_format': {"type": "json_object"},
-    }
-} # Language Model
-
-vlm_cfg = {
-    'model': 'Qwen/Qwen2.5-VL-32B-Instruct-AWQ',
-    'model_type': 'qwenvl_oai',
-    'model_server': 'http://localhost:5030/v1',
-    'api_key': 'token-abc123',
-
-    'generate_cfg': {
-        'top_p': 0.8,
-    }
-} # Vision Language Model
-```
-
-### 2. RL Policy Training
-Train RL policies for baseline control:
-```bash
-cd rl_tsc
-python train_rl_tsc.py
-```
 
 Pretrained models available in [rl_tsc/results](./rl_tsc/results/):
 
@@ -133,43 +84,7 @@ cd vlm_tsc_en
 python vlmlight_decision.py
 ```
 
-## 📂 Repository Structure
 
-```
-.
-├── assets/                   # Visual assets for documentation
-├── result_analysis/          # Trip information analysis tools
-│   └── analysis_tripinfo.py  # Performance metric calculation
-├── rl_tsc/                   # Reinforcement learning components
-│   ├── _config.py           # RL training configuration
-│   ├── eval_rl_tsc.py       # RL policy evaluation
-│   ├── train_rl_tsc.py      # RL policy training
-│   └── utils/               # RL helper functions
-├── sim_envs/                 # Traffic simulation scenarios
-│   ├── France_Massy/        # Massy, France intersection
-│   ├── Hongkong_YMT/        # YMT, Hong Kong intersection
-│   └── SouthKorea_Songdo/   # Songdo, South Korea intersection
-├── vlm_tsc_en/               # English version implementation
-│   ├── _config.py           # English agent configuration
-│   ├── utils/               # English processing utilities
-│   └── vlmlight_decision.py # English decision pipeline
-└── vlm_tsc_zh/               # Chinese version implementation
-    ├── _config.py           # Chinese agent configuration
-    ├── utils/               # Chinese processing utilities
-    └── vlmlight_decision.py # Chinese decision pipeline
-```
-
-## 📚 Citation
-If you find this work useful, please cite our papers:
-
-```
-@article{wang2025vlmlight,
-  title={VLMLight: Traffic Signal Control via Vision-Language Meta-Control and Dual-Branch Reasoning},
-  author={Wang, Maonan and Chen, Yirong and Pang, Aoyu and Cai, Yuxin and Chen, Chung Shue and Kan, Yuheng and Pun, Man-On},
-  journal={arXiv preprint arXiv:2505.19486},
-  year={2025}
-}
-```
 
 ## 🙏 Acknowledgements
 
