@@ -36,7 +36,7 @@ def run_multi_capacity_test():
 
     sumo_cfg = os.path.join(root_path, "sim_envs", config['SCENARIO_NAME'], f"{config['NETFILE']}.sumocfg")
     
-    # 1. Caricamento Modelli TSC (Semaforo)
+    
     tsc_env_fn = make_env(
         env_index='eval', 
         tls_id=config["JUNCTION_NAME"],
@@ -55,7 +55,7 @@ def run_multi_capacity_test():
     tsc_env_base.training = False
     tsc_model = PPO.load(tsc_model_path, env=tsc_env_base) 
 
-    # 2. Caricamento Modello PPO Slicing
+
     ppo_agent_path = os.path.join(root_path, "ppo_bs_transformer_final.zip")
     bs_norm_path = os.path.join(root_path, "vec_bs_transformer_final.pkl")
     ppo_agent = PPO.load(ppo_agent_path)
@@ -69,7 +69,7 @@ def run_multi_capacity_test():
 
         obs = eval_env.reset()
         
-        # Identificazione lane per il mapping cardinale
+        
         all_controlled = traci.trafficlight.getControlledLanes(config["JUNCTION_NAME"])
         unique_lanes_6 = list(dict.fromkeys(all_controlled))[:6] 
 
@@ -116,7 +116,7 @@ def run_multi_capacity_test():
             step_results.append(d_plot)
             if done[0]: break
 
-        # --- GENERAZIONE GRAFICO ---
+        # Graphic Generation
         df = pd.DataFrame(step_results)
         fig, (ax1, ax2, ax3) = plt.subplots(3, 1, figsize=(12, 14), sharex=True)
         
