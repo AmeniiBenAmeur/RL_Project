@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- generated on 2026-02-15T22:22:56.889944+01:00 by Eclipse SUMO GUI 1.26.0
+<sumoConfiguration xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/sumoConfiguration.xsd">
+
+    <input>
+        <net-file value="C:\Users\Utente\Documents\VLMLight_Project\VLMLight\rl_tsc\../sim_envs/SouthKorea_Songdo/./env/songdo.net.xml"/>
+        <route-files value="C:\Users\Utente\Documents\VLMLight_Project\VLMLight\rl_tsc\../sim_envs/SouthKorea_Songdo/./env/songdo.rou.xml"/>
+        <additional-files value="C:\Users\Utente\Documents\VLMLight_Project\VLMLight\rl_tsc\../sim_envs/SouthKorea_Songdo/add/e2.add.xml,C:\Users\Utente\Documents\VLMLight_Project\VLMLight\rl_tsc\../sim_envs/SouthKorea_Songdo/add/tls_programs.add.xml"/>
+    </input>
+
+    <output>
+        <tripinfo-output value="C:\Users\Utente\Documents\VLMLight_Project\VLMLight\rl_tsc\./tripinfo.out.xml"/>
+        <tripinfo-output.write-unfinished value="true"/>
+    </output>
+
+    <processing>
+        <time-to-teleport value="-1"/>
+        <waiting-time-memory value="10000"/>
+        <max-depart-delay value="100000"/>
+    </processing>
+
+    <report>
+        <no-warnings value="true"/>
+        <no-step-log value="true"/>
+    </report>
+
+    <emissions>
+        <device.emissions.probability value="1.0"/>
+    </emissions>
+
+    <traci_server>
+        <remote-port value="61278"/>
+    </traci_server>
+
+    <random_number>
+        <random value="true"/>
+    </random_number>
+
+    <gui_only>
+        <quit-on-end value="true"/>
+        <start value="true"/>
+    </gui_only>
+
+</sumoConfiguration>
+-->
+
+<additional xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/additional_file.xsd">
+    <tlLogic id="J2" type="static" programID="0">
+        <phase duration="3.00"  state="rrrrrryyyyyyyrrrrrrrrrrrrrrr"/>
+        <phase duration="30.00" state="rrrrrrrrrrrrrrrrrrrGGGGGGGGG"/>
+        <phase duration="3.00"  state="rrrrrrrrrrrrrrrrrrryyyyyyyyy"/>
+        <phase duration="5.00"  state="rrrrrrGGGGGGGrrrrrrrrrrrrrrr"/>
+        <phase duration="3.00"  state="rrrrrryyyyyyyrrrrrrrrrrrrrrr"/>
+        <phase duration="5.00"  state="GGGGGGrrrrrrrrrrrrrrrrrrrrrr"/>
+        <phase duration="3.00"  state="yyyyyyrrrrrrrrrrrrrrrrrrrrrr"/>
+        <phase duration="5.00"  state="rrrrrrrrrrrrrGGGGGGrrrrrrrrr"/>
+        <phase duration="3.00"  state="rrrrrrrrrrrrryyyyyyrrrrrrrrr"/>
+        <phase duration="5.00"  state="rrrrrrGGGGGGGrrrrrrrrrrrrrrr"/>
+        <phase duration="3.00"  state="rrrrrryyyyyyyrrrrrrrrrrrrrrr"/>
+        <phase duration="5.00"  state="rrrrrrrrrrrrrrrrrrrGGGGGGGGG"/>
+        <phase duration="3.00"  state="rrrrrrrrrrrrrrrrrrryyyyyyyyy"/>
+        <phase duration="5.00"  state="GGGGGGrrrrrrrrrrrrrrrrrrrrrr"/>
+        <phase duration="3.00"  state="yyyyyyrrrrrrrrrrrrrrrrrrrrrr"/>
+        <phase duration="5.00"  state="rrrrrrrrrrrrrGGGGGGrrrrrrrrr"/>
+        <phase duration="3.00"  state="rrrrrrrrrrrrryyyyyyrrrrrrrrr"/>
+        <phase duration="5.00"  state="rrrrrrGGGGGGGrrrrrrrrrrrrrrr"/>
+        <phase duration="3.00"  state="rrrrrryyyyyyyrrrrrrrrrrrrrrr"/>
+        <phase duration="10.00" state="rrrrrrrrrrrrrrrrrrrGGGGGGGGG"/>
+        <phase duration="3.00"  state="rrrrrrrrrrrrrrrrrrryyyyyyyyy"/>
+        <phase duration="10.00" state="GGGGGGrrrrrrrrrrrrrrrrrrrrrr"/>
+        <phase duration="3.00"  state="yyyyyyrrrrrrrrrrrrrrrrrrrrrr"/>
+        <phase duration="5.00"  state="rrrrrrGGGGGGGrrrrrrrrrrrrrrr"/>
+        <phase duration="3.00"  state="rrrrrryyyyyyyrrrrrrrrrrrrrrr"/>
+        <phase duration="5.00"  state="rrrrrrrrrrrrrGGGGGGrrrrrrrrr"/>
+        <phase duration="3.00"  state="rrrrrrrrrrrrryyyyyyrrrrrrrrr"/>
+        <phase duration="10.00" state="rrrrrrrrrrrrrrrrrrrGGGGGGGGG"/>
+        <phase duration="3.00"  state="rrrrrrrrrrrrrrrrrrryyyyyyyyy"/>
+        <phase duration="5.00"  state="rrrrrrGGGGGGGrrrrrrrrrrrrrrr"/>
+        <phase duration="3.00"  state="rrrrrryyyyyyyrrrrrrrrrrrrrrr"/>
+        <phase duration="10.00" state="GGGGGGrrrrrrrrrrrrrrrrrrrrrr"/>
+        <phase duration="3.00"  state="yyyyyyrrrrrrrrrrrrrrrrrrrrrr"/>
+        <phase duration="5.00"  state="rrrrrrrrrrrrrGGGGGGrrrrrrrrr"/>
+        <phase duration="3.00"  state="rrrrrrrrrrrrryyyyyyrrrrrrrrr"/>
+        <phase duration="5.00"  state="rrrrrrGGGGGGGrrrrrrrrrrrrrrr"/>
+        <phase duration="3.00"  state="rrrrrryyyyyyyrrrrrrrrrrrrrrr"/>
+        <phase duration="5.00"  state="rrrrrrrrrrrrrrrrrrrGGGGGGGGG"/>
+        <phase duration="3.00"  state="rrrrrrrrrrrrrrrrrrryyyyyyyyy"/>
+        <phase duration="5.00"  state="GGGGGGrrrrrrrrrrrrrrrrrrrrrr"/>
+        <phase duration="3.00"  state="yyyyyyrrrrrrrrrrrrrrrrrrrrrr"/>
+        <phase duration="5.00"  state="rrrrrrrrrrrrrGGGGGGrrrrrrrrr"/>
+        <phase duration="3.00"  state="rrrrrrrrrrrrryyyyyyrrrrrrrrr"/>
+        <phase duration="5.00"  state="rrrrrrGGGGGGGrrrrrrrrrrrrrrr"/>
+        <phase duration="3.00"  state="rrrrrryyyyyyyrrrrrrrrrrrrrrr"/>
+        <phase duration="5.00"  state="rrrrrrrrrrrrrrrrrrrGGGGGGGGG"/>
+        <phase duration="3.00"  state="rrrrrrrrrrrrrrrrrrryyyyyyyyy"/>
+        <phase duration="5.00"  state="GGGGGGrrrrrrrrrrrrrrrrrrrrrr"/>
+        <phase duration="3.00"  state="yyyyyyrrrrrrrrrrrrrrrrrrrrrr"/>
+        <phase duration="5.00"  state="rrrrrrrrrrrrrGGGGGGrrrrrrrrr"/>
+        <phase duration="3.00"  state="rrrrrrrrrrrrryyyyyyrrrrrrrrr"/>
+        <phase duration="5.00"  state="rrrrrrGGGGGGGrrrrrrrrrrrrrrr"/>
+        <phase duration="3.00"  state="rrrrrryyyyyyyrrrrrrrrrrrrrrr"/>
+        <phase duration="5.00"  state="rrrrrrrrrrrrrrrrrrrGGGGGGGGG"/>
+        <phase duration="3.00"  state="rrrrrrrrrrrrrrrrrrryyyyyyyyy"/>
+        <phase duration="5.00"  state="GGGGGGrrrrrrrrrrrrrrrrrrrrrr"/>
+        <phase duration="3.00"  state="yyyyyyrrrrrrrrrrrrrrrrrrrrrr"/>
+        <phase duration="5.00"  state="rrrrrrrrrrrrrGGGGGGrrrrrrrrr"/>
+        <phase duration="3.00"  state="rrrrrrrrrrrrryyyyyyrrrrrrrrr"/>
+        <phase duration="5.00"  state="rrrrrrGGGGGGGrrrrrrrrrrrrrrr"/>
+        <phase duration="3.00"  state="rrrrrryyyyyyyrrrrrrrrrrrrrrr"/>
+        <phase duration="5.00"  state="rrrrrrrrrrrrrrrrrrrGGGGGGGGG"/>
+        <phase duration="3.00"  state="rrrrrrrrrrrrrrrrrrryyyyyyyyy"/>
+        <phase duration="5.00"  state="GGGGGGrrrrrrrrrrrrrrrrrrrrrr"/>
+        <phase duration="3.00"  state="yyyyyyrrrrrrrrrrrrrrrrrrrrrr"/>
+        <phase duration="5.00"  state="rrrrrrrrrrrrrGGGGGGrrrrrrrrr"/>
+        <phase duration="3.00"  state="rrrrrrrrrrrrryyyyyyrrrrrrrrr"/>
+        <phase duration="5.00"  state="rrrrrrGGGGGGGrrrrrrrrrrrrrrr"/>
+        <phase duration="3.00"  state="rrrrrryyyyyyyrrrrrrrrrrrrrrr"/>
+        <phase duration="5.00"  state="rrrrrrrrrrrrrrrrrrrGGGGGGGGG"/>
+        <phase duration="3.00"  state="rrrrrrrrrrrrrrrrrrryyyyyyyyy"/>
+        <phase duration="5.00"  state="GGGGGGrrrrrrrrrrrrrrrrrrrrrr"/>
+        <phase duration="3.00"  state="yyyyyyrrrrrrrrrrrrrrrrrrrrrr"/>
+        <phase duration="5.00"  state="rrrrrrrrrrrrrGGGGGGrrrrrrrrr"/>
+        <phase duration="3.00"  state="rrrrrrrrrrrrryyyyyyrrrrrrrrr"/>
+        <phase duration="5.00"  state="rrrrrrGGGGGGGrrrrrrrrrrrrrrr"/>
+        <phase duration="3.00"  state="rrrrrryyyyyyyrrrrrrrrrrrrrrr"/>
+        <phase duration="5.00"  state="rrrrrrrrrrrrrrrrrrrGGGGGGGGG"/>
+        <phase duration="3.00"  state="rrrrrrrrrrrrrrrrrrryyyyyyyyy"/>
+        <phase duration="5.00"  state="GGGGGGrrrrrrrrrrrrrrrrrrrrrr"/>
+        <phase duration="3.00"  state="yyyyyyrrrrrrrrrrrrrrrrrrrrrr"/>
+        <phase duration="5.00"  state="rrrrrrrrrrrrrGGGGGGrrrrrrrrr"/>
+        <phase duration="3.00"  state="rrrrrrrrrrrrryyyyyyrrrrrrrrr"/>
+        <phase duration="5.00"  state="rrrrrrGGGGGGGrrrrrrrrrrrrrrr"/>
+        <phase duration="3.00"  state="rrrrrryyyyyyyrrrrrrrrrrrrrrr"/>
+        <phase duration="5.00"  state="rrrrrrrrrrrrrrrrrrrGGGGGGGGG"/>
+        <phase duration="3.00"  state="rrrrrrrrrrrrrrrrrrryyyyyyyyy"/>
+        <phase duration="5.00"  state="GGGGGGrrrrrrrrrrrrrrrrrrrrrr"/>
+        <phase duration="3.00"  state="yyyyyyrrrrrrrrrrrrrrrrrrrrrr"/>
+        <phase duration="5.00"  state="rrrrrrrrrrrrrGGGGGGrrrrrrrrr"/>
+        <phase duration="3.00"  state="rrrrrrrrrrrrryyyyyyrrrrrrrrr"/>
+        <phase duration="5.00"  state="rrrrrrGGGGGGGrrrrrrrrrrrrrrr"/>
+        <phase duration="3.00"  state="rrrrrryyyyyyyrrrrrrrrrrrrrrr"/>
+        <phase duration="5.00"  state="rrrrrrrrrrrrrrrrrrrGGGGGGGGG"/>
+        <phase duration="3.00"  state="rrrrrrrrrrrrrrrrrrryyyyyyyyy"/>
+        <phase duration="5.00"  state="GGGGGGrrrrrrrrrrrrrrrrrrrrrr"/>
+        <phase duration="3.00"  state="yyyyyyrrrrrrrrrrrrrrrrrrrrrr"/>
+        <phase duration="5.00"  state="rrrrrrrrrrrrrGGGGGGrrrrrrrrr"/>
+        <phase duration="3.00"  state="rrrrrrrrrrrrryyyyyyrrrrrrrrr"/>
+        <phase duration="5.00"  state="rrrrrrGGGGGGGrrrrrrrrrrrrrrr"/>
+        <phase duration="3.00"  state="rrrrrryyyyyyyrrrrrrrrrrrrrrr"/>
+        <phase duration="5.00"  state="rrrrrrrrrrrrrrrrrrrGGGGGGGGG"/>
+        <phase duration="3.00"  state="rrrrrrrrrrrrrrrrrrryyyyyyyyy"/>
+        <phase duration="5.00"  state="GGGGGGrrrrrrrrrrrrrrrrrrrrrr"/>
+        <phase duration="3.00"  state="yyyyyyrrrrrrrrrrrrrrrrrrrrrr"/>
+        <phase duration="5.00"  state="rrrrrrrrrrrrrGGGGGGrrrrrrrrr"/>
+        <phase duration="3.00"  state="rrrrrrrrrrrrryyyyyyrrrrrrrrr"/>
+        <phase duration="5.00"  state="rrrrrrrrrrrrrrrrrrrGGGGGGGGG"/>
+        <phase duration="3.00"  state="rrrrrrrrrrrrrrrrrrryyyyyyyyy"/>
+        <phase duration="5.00"  state="rrrrrrGGGGGGGrrrrrrrrrrrrrrr"/>
+        <phase duration="3.00"  state="rrrrrryyyyyyyrrrrrrrrrrrrrrr"/>
+        <phase duration="5.00"  state="GGGGGGrrrrrrrrrrrrrrrrrrrrrr"/>
+        <phase duration="3.00"  state="yyyyyyrrrrrrrrrrrrrrrrrrrrrr"/>
+        <phase duration="5.00"  state="rrrrrrrrrrrrrGGGGGGrrrrrrrrr"/>
+        <phase duration="3.00"  state="rrrrrrrrrrrrryyyyyyrrrrrrrrr"/>
+        <phase duration="5.00"  state="rrrrrrrrrrrrrrrrrrrGGGGGGGGG"/>
+        <phase duration="3.00"  state="rrrrrrrrrrrrrrrrrrryyyyyyyyy"/>
+        <phase duration="5.00"  state="rrrrrrGGGGGGGrrrrrrrrrrrrrrr"/>
+        <phase duration="3.00"  state="rrrrrryyyyyyyrrrrrrrrrrrrrrr"/>
+        <phase duration="5.00"  state="GGGGGGrrrrrrrrrrrrrrrrrrrrrr"/>
+        <phase duration="3.00"  state="yyyyyyrrrrrrrrrrrrrrrrrrrrrr"/>
+        <phase duration="5.00"  state="rrrrrrrrrrrrrGGGGGGrrrrrrrrr"/>
+        <phase duration="3.00"  state="rrrrrrrrrrrrryyyyyyrrrrrrrrr"/>
+        <phase duration="5.00"  state="rrrrrrrrrrrrrrrrrrrGGGGGGGGG"/>
+        <phase duration="3.00"  state="rrrrrrrrrrrrrrrrrrryyyyyyyyy"/>
+        <phase duration="5.00"  state="rrrrrrGGGGGGGrrrrrrrrrrrrrrr"/>
+        <phase duration="3.00"  state="rrrrrryyyyyyyrrrrrrrrrrrrrrr"/>
+        <phase duration="5.00"  state="GGGGGGrrrrrrrrrrrrrrrrrrrrrr"/>
+        <phase duration="3.00"  state="yyyyyyrrrrrrrrrrrrrrrrrrrrrr"/>
+        <phase duration="5.00"  state="rrrrrrrrrrrrrrrrrrrGGGGGGGGG"/>
+        <phase duration="3.00"  state="rrrrrrrrrrrrrrrrrrryyyyyyyyy"/>
+        <phase duration="5.00"  state="rrrrrrGGGGGGGrrrrrrrrrrrrrrr"/>
+        <phase duration="3.00"  state="rrrrrryyyyyyyrrrrrrrrrrrrrrr"/>
+        <phase duration="5.00"  state="GGGGGGrrrrrrrrrrrrrrrrrrrrrr"/>
+        <phase duration="3.00"  state="yyyyyyrrrrrrrrrrrrrrrrrrrrrr"/>
+        <phase duration="5.00"  state="rrrrrrrrrrrrrrrrrrrGGGGGGGGG"/>
+        <phase duration="3.00"  state="rrrrrrrrrrrrrrrrrrryyyyyyyyy"/>
+        <phase duration="5.00"  state="rrrrrrGGGGGGGrrrrrrrrrrrrrrr"/>
+        <phase duration="3.00"  state="rrrrrryyyyyyyrrrrrrrrrrrrrrr"/>
+        <phase duration="5.00"  state="GGGGGGrrrrrrrrrrrrrrrrrrrrrr"/>
+        <phase duration="3.00"  state="yyyyyyrrrrrrrrrrrrrrrrrrrrrr"/>
+        <phase duration="5.00"  state="rrrrrrrrrrrrrrrrrrrGGGGGGGGG"/>
+        <phase duration="3.00"  state="rrrrrrrrrrrrrrrrrrryyyyyyyyy"/>
+        <phase duration="5.00"  state="rrrrrrGGGGGGGrrrrrrrrrrrrrrr"/>
+        <phase duration="3.00"  state="rrrrrryyyyyyyrrrrrrrrrrrrrrr"/>
+        <phase duration="5.00"  state="GGGGGGrrrrrrrrrrrrrrrrrrrrrr"/>
+        <phase duration="3.00"  state="yyyyyyrrrrrrrrrrrrrrrrrrrrrr"/>
+        <phase duration="5.00"  state="rrrrrrrrrrrrrrrrrrrGGGGGGGGG"/>
+        <phase duration="3.00"  state="rrrrrrrrrrrrrrrrrrryyyyyyyyy"/>
+        <phase duration="5.00"  state="rrrrrrGGGGGGGrrrrrrrrrrrrrrr"/>
+        <phase duration="3.00"  state="rrrrrryyyyyyyrrrrrrrrrrrrrrr"/>
+        <phase duration="5.00"  state="GGGGGGrrrrrrrrrrrrrrrrrrrrrr"/>
+        <phase duration="3.00"  state="yyyyyyrrrrrrrrrrrrrrrrrrrrrr"/>
+        <phase duration="5.00"  state="rrrrrrGGGGGGGrrrrrrrrrrrrrrr"/>
+        <phase duration="3.00"  state="rrrrrryyyyyyyrrrrrrrrrrrrrrr"/>
+        <phase duration="15.00" state="GGGGGGrrrrrrrrrrrrrrrrrrrrrr"/>
+        <phase duration="3.00"  state="yyyyyyrrrrrrrrrrrrrrrrrrrrrr"/>
+        <phase duration="5.00"  state="rrrrrrrrrrrrrGGGGGGrrrrrrrrr"/>
+        <phase duration="3.00"  state="rrrrrrrrrrrrryyyyyyrrrrrrrrr"/>
+        <phase duration="115.00" state="rrrrrrrrrrrrrrrrrrrGGGGGGGGG"/>
+    </tlLogic>
+</additional>

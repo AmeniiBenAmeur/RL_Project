@@ -12,7 +12,7 @@ import time
 import argparse
 
 
-tshub_path = "/home/tshub/Code_Project/2_Traffic/TransSimHub/"
+tshub_path = tshub_path = "C:/Users/Utente/Documents/VLMLight_Project/VLMLight/"
 sys.path.insert(0, tshub_path + "tshub/tshub_env3d/")
 
 from vis3d_blender_render import TimestepRenderer, VehicleManager
